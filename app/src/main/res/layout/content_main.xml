@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="bernie.com.builddemoapplication.MainActivity"
+    tools:showIn="@layout/activity_main">
+
+    <TextView
+        android:id="@+id/userText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello World!"
+        app:layout_constraintBottom_toBottomOf="@+id/content_main"
+        app:layout_constraintLeft_toLeftOf="@+id/content_main"
+        app:layout_constraintRight_toRightOf="@+id/content_main"
+        app:layout_constraintTop_toTopOf="@+id/content_main" />
+    <Button
+        android:id="@+id/likeButton"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/userText"
+        app:layout_constraintLeft_toLeftOf="@+id/content_main"
+        app:layout_constraintRight_toRightOf="@+id/content_main"
+        app:layout_constraintTop_toTopOf="@+id/content_main"
+        android:text="like"/>
+    <TextView
+        android:id="@+id/likeText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/likeButton"
+        app:layout_constraintLeft_toLeftOf="@+id/content_main"
+        app:layout_constraintRight_toRightOf="@+id/content_main"
+        app:layout_constraintTop_toTopOf="@+id/content_main"
+        android:text="likeCount"/>
+
+</android.support.constraint.ConstraintLayout>
